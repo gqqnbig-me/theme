@@ -1,0 +1,157 @@
+/*
+Theme Name:     twentyseventeen我的修改
+Theme URI:      http: //example.com/
+Description:    Child theme for the Twenty Ten theme 
+Author:         Your name here
+Author URI:     http: //example.com/about/
+Template:		twentyseventeen
+Version:        1.1.0
+*/
+
+@import url("../twentyseventeen/style.css");
+
+.wrap {
+	max-width:unset;
+}
+
+a:hover, a:active
+{
+	color: #007acc;
+}
+a {
+	
+	color: #007acc;
+}
+
+.entry-content a, .entry-summary a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong
+{
+	-webkit-box-shadow:unset;
+	box-shadow:unset;
+}
+
+.entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover
+{
+	color: #007acc;
+	-webkit-box-shadow:unset;
+	box-shadow:unset;
+	text-decoration:underline;
+}
+
+.entry-content code:not(.hljs) {
+	border: 1px solid #ddd;
+	padding: 1px 4px;
+	border-radius: 2px;
+	background-color: #f9f9f9;
+	font-family: monospace,Courier;
+}
+
+.entry-content em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.entry-content p {
+	text-indent: 2em;
+}
+
+pre[lang]+p {
+    text-indent: 0;
+}
+
+.wp-caption-text {
+	font-style: normal;
+	font-size: 1em;
+	font-family: 楷体;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+dd {
+	margin: 0 0 0 40px;
+}
+
+
+kbd {
+	padding: .1em .6em;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #f7f7f7;
+	color: #333;
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;
+	border-radius: 3px;
+	margin: 0 .1em;
+	text-shadow: 0 1px 0 #fff;
+	line-height: 1.4;
+	white-space: nowrap;
+	display:inline-block;
+	text-indent:0;
+	vertical-align: middle;
+}
+
+
+a[target=_blank]:not(.noOpenNewIndicator)::after, figure a[target=_blank].noOpenNewIndicator+figcaption::after {
+	content:"";
+	background-image: url(/wp-content/themes/me/w.svg);
+    background-size: contain;
+    text-indent: 0;
+    display: inline-block;
+    font-size: 0.5em;
+    color: gray;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.2em;
+}
+
+figure a[target=_blank].noOpenNewIndicator+figcaption::after {
+
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+figure > pre {
+	margin-bottom: 1em;
+}
+
+@font-face {
+  font-family: MyCustomFont;
+  src: local(Kaiti);
+  /* no unicode-range; default to all characters */
+}
+
+@font-face {
+  font-family: MyCustomFont;
+  src: local('Merriweather Italic'), local('Merriweather-Italic'), url(https://fonts.gstatic.com/s/merriweather/v13/So5lHxHT37p2SS4-t60SlBMBlNeli-0RcAdOFWWLdxQ.woff2) format('woff2');
+  unicode-range: U+00-024F;  /* Latin, Latin1 Sup., Ext-A, Ext-B */
+}
+
+
+i {
+	font-family: MyCustomFont;
+	font-style:normal;
+}
+
+span[lang=en] {
+	font-family: "Times New Roman";
+}
+
+span[lang=en]::before {
+	content:"英文：";
+}
+
+@media screen and (min-width: 48em) {
+    .navigation-top {
+        font-size: 0.875rem;
+        width: 100%;
+        z-index: 3;
+        position: sticky;
+        top: 32px;
+    }
+}
