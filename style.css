@@ -162,3 +162,9 @@ span[lang=en]::before {
         top: 32px;
     }
 }
+
+figure {
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+    text-align: center;
+}
