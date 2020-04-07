@@ -14,6 +14,46 @@ Version:        1.1.0
 	max-width:unset;
 }
 
+@keyframes slidein {
+  from { background-position-x: 0 }
+  to   { background-position-x: 50% }
+}
+
+
+.site-header {
+	background-image: url(https://gqqnbig.me/wp-content/uploads/2020/04/560175.jpg);
+    background-size: cover;
+	background-position: 0 10%;
+    background-repeat: no-repeat;
+	/* 似乎仅当视口小于背景宽度时才有效 */
+	animation: slidein 20s infinite alternate;
+}
+
+.site-header a {
+	color:white;
+}
+
+@media screen and (min-width: 48em) {
+	.site-header .sub-menu a {
+		color: black;
+	}
+}
+
+@media screen and (max-width: 47.99em) {
+	.site-header .main-navigation ul {
+		background: none;
+	}
+}
+
+.site-header .navigation-top {
+	background-color:rgba(0,0,0,0);
+}
+
+.site-header button {
+	color:white;
+}
+
+
 a:hover, a:active
 {
 	color: #007acc;
