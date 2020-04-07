@@ -79,8 +79,12 @@ dd {
 	margin: 0 0 0 40px;
 }
 
+kbd.cmd::before {
+	content:'$';
+	margin-right:1em;
+}
 
-kbd {
+kbd.key {
 	padding: .1em .6em;
 	border: 1px solid #ccc;
 	font-size: 11px;
@@ -120,11 +124,12 @@ figure a[target=_blank].noOpenNewIndicator+figcaption::after {
 }
 
 figure {
-	margin-bottom: 1em;
+	margin: 2em 0;
 }
 
 figure > pre {
 	margin-bottom: 1em;
+	text-align:left;
 }
 
 @font-face {
@@ -164,7 +169,11 @@ span[lang=en]::before {
 }
 
 figure {
-    border: thin #c0c0c0 solid;
+    /*border: thin #c0c0c0 solid;*/
     padding: 5px;
     text-align: center;
+}
+
+pre > code.hljs{
+	tab-size: 4;
 }
