@@ -15,9 +15,15 @@ Version:        1.1.0
 	max-width:unset;
 }
 
-@keyframes slidein {
-  from { background-position-x: 0 }
-  to   { background-position-x: 50% }
+@media screen and (max-width: 800px) {
+	@keyframes slidein {
+	  from { background-position-x: 0 }
+	  to   { background-position-x: 50% }
+	}
+
+	.site-header {
+		animation: slidein 20s infinite alternate;
+	}
 }
 
 
@@ -26,8 +32,6 @@ Version:        1.1.0
     background-size: cover;
 	background-position: 0 10%;
     background-repeat: no-repeat;
-	/* 似乎仅当视口小于背景宽度时才有效 */
-	animation: slidein 20s infinite alternate;
 }
 
 .site-header a {
