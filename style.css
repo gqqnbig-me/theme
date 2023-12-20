@@ -9,6 +9,7 @@ Template:		twentyseventeen
 Version:        1.1.0
 */
 
+/* functions.php is loaded for the parent theme, but style.css isn't. */
 @import url("../twentyseventeen/style.css");
 
 .wrap {
