@@ -221,6 +221,10 @@ figure {
     text-align: center;
 }
 
+code {
+	font-family: Consolas, 'Courier New', monospace;
+}
+
 pre > code.hljs{
 	tab-size: 4;
 }
