@@ -1,16 +1,17 @@
 @charset "UTF-8";
 /*
-Theme Name:     twentyseventeen我的修改
+Theme Name:     Popularis我的修改
 Theme URI:      http: //example.com/
-Description:    Child theme for the Twenty Ten theme 
+Description:    Child theme for the theme Popularis 
 Author:         Your name here
 Author URI:     http: //example.com/about/
-Template:		twentyseventeen
+Template:		popularis
 Version:        1.1.0
 */
 
 /* functions.php is loaded for the parent theme, but style.css isn't. */
-@import url("../twentyseventeen/style.css");
+
+@import url("../popularis/style.css");
 
 .wrap {
 	max-width:unset;
@@ -154,7 +155,7 @@ kbd.key {
 
 a[target=_blank]:not(.noOpenNewIndicator)::after, figure a[target=_blank].noOpenNewIndicator+figcaption::after {
 	content:"";
-	background-image: url(/wp-content/themes/me/w.svg);
+	background-image: url(/wp-content/themes/my-theme/w.svg);
     background-size: contain;
     text-indent: 0;
     display: inline-block;
