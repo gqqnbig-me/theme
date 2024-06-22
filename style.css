@@ -113,6 +113,23 @@ pre[lang]+p {
     text-indent: 0;
 }
 
+.single-content table {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.single-content table th {
+	text-align: left;
+}
+
+.single-content table thead {
+	border-bottom: 1px solid gray;
+}
+
+.single-content table th:nth-child(1) {
+    border-right: 1px solid gray;
+}
+
 .wp-caption-text {
 	font-style: normal;
 	font-size: 1em;
