@@ -28,6 +28,17 @@ Version:        1.1.0
 	}
 }
 
+@media (max-width: 1000px) {
+	.site-header {
+		background-image: url(https://gqqnbig.me/wp-content/uploads/2025/04/560175-mobile.jpg);
+	}
+}
+
+@media (min-width: 1001px) {
+	.site-header {
+		background-image: url(https://gqqnbig.me/wp-content/uploads/2020/04/560175.jpg);
+	}
+}
 
 .site-header {
 	background-image: url(https://gqqnbig.me/wp-content/uploads/2020/04/560175.jpg);
